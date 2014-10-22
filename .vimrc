@@ -63,11 +63,12 @@ set mouse=a
 :map <S-h> gT
 :map <S-l> gt
  
+" Most Recently Used Files F12 Key
+map <F1> :MRU<CR>
+
 " Nerd Tree file explorer Toggle
 map <F2> :NERDTreeToggle<CR>
  
-" Most Recently Used Files F12 Key
-map <F5> :MRU<CR>
  
 " : YRShow - Yank Ring Popup Clipboard toggle
 nnoremap <silent> <F3> :YRShow<cr>
@@ -96,7 +97,7 @@ nnoremap <F9> <C-w><C-]>
 nnoremap <F10> <C-t>
  
 " Drush Shortcuts
-nnoremap <leader>dc :excute 'silent !drush cc all' | redraw!
+nnoremap <leader>dc :execute 'silent !drush cc all' | redraw!
  
 " Most Recently Opened Files
 nnoremap <leader>, :MRU<CR>
