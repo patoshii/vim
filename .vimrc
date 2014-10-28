@@ -102,6 +102,9 @@ nnoremap <leader>dc :execute 'silent !drush cc all' | redraw!
 " Most Recently Opened Files
 nnoremap <leader>, :MRU<CR>
 
+" Surround word in quotes: http://learnvimscriptthehardway.stevelosh.com/chapters/09.html
+:nnoremap <leader>" viw<esc>a"<esc>hbi"<esc>lel
+
 " Bring Up the Custom Help Menu with Shortcuts
 nnoremap <leader>? :echo "XCUBICLE - CUSTOM VIM SETUP SHORTCUTS \n\n ============================ \n\n k j = ESC Alternative - Type k j While in Insert Mode to Exit Insert Mode \n\n  =====================  \n\n Leader Key = , \n\n , ev = Opens up .vimrc config file \n\n -------------------------------- \n\n , l = Search the Buffer List \n\n , gl = GIT Pull \n , gc = GIT Commit then GIT PUSH \n , gs = GIT Status \n\n\n , dc = Drush Cache Clear All \n\n\n , , = Most Recently Opened Files \n\n\n -------------------------- \n\n F2 = NERD Tree File Manager \n\n F5 = GUNDO - Tree like view of your UNDO history \n\n F6 = Global Search + Replace Across Multiple Files"<CR>
 
