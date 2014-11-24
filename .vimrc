@@ -15,6 +15,7 @@ set incsearch
 au WinLeave * set nocursorline nocursorcolumn
 au WinEnter * set cursorline cursorcolumn
 set cursorline cursorcolumn
+highlight CursorColumn ctermbg=blue
  
 set expandtab
 set tabstop=2
@@ -55,6 +56,7 @@ autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 autocmd FileType inc set omnifunc=phpcomplete#CompletePHP
+autocmd BufRead,BufNewFile *.css,*.scss,*.less setlocal foldmethod=marker foldmarker={,}
  
 " Make the mouse work in VIM
 set mouse=a
@@ -99,6 +101,9 @@ nnoremap <F10> <C-t>
 " Drush Shortcuts
 nnoremap <leader>dc :execute 'silent !drush cc all' | redraw!
  
+" SASS stuff
+nnoremap <leader>c :!compass compile ../../;<C-left>
+
 " Most Recently Opened Files
 nnoremap <leader>, :MRU<CR>
 
