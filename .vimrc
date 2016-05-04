@@ -5,7 +5,6 @@ set autoindent
 set title
 set ignorecase
 set scrolloff=4
-set number
 set autochdir
 set tags=./tags;
 set noswapfile
@@ -74,7 +73,8 @@ map <F2> :NERDTreeToggle<CR>
  
 " : YRShow - Yank Ring Popup Clipboard toggle
 nnoremap <silent> <F3> :YRShow<cr>
-inoremap <silent> <F3> <ESC>:YRShow<cr>
+nnoremap <silent> <leader>, :YRShow<cr>
+"inoremap <silent> <leader>, <ESC>:YRShow<cr>
  
 " tag list toggle menu - used for browsing all vars and functions in a file
 map <F4> :TlistToggle<CR>
@@ -105,14 +105,14 @@ nnoremap <leader>dc :execute 'silent !drush cc all' | redraw!
 nnoremap <leader>c :!compass compile ../../;<C-left>
 
 " Most Recently Opened Files
-nnoremap <leader>, :MRU<CR>
+nnoremap <leader>m :MRU<CR>
 
 " Surround word in quotes: http://learnvimscriptthehardway.stevelosh.com/chapters/09.html
 :nnoremap <leader>" viw<esc>a"<esc>hbi"<esc>lel
 
 " Bring Up the Custom Help Menu with Shortcuts
-nnoremap <leader>? :echo "XCUBICLE - CUSTOM VIM SETUP SHORTCUTS \n\n ============================ \n\n k j = ESC Alternative - Type k j While in Insert Mode to Exit Insert Mode \n\n  =====================  \n\n Leader Key = , \n\n , ev = Opens up .vimrc config file \n\n -------------------------------- \n\n , l = Search the Buffer List \n\n , gl = GIT Pull \n , gc = GIT Commit then GIT PUSH \n , gs = GIT Status \n\n\n , dc = Drush Cache Clear All \n\n\n , , = Most Recently Opened Files \n\n\n -------------------------- \n\n F2 = NERD Tree File Manager \n\n F5 = GUNDO - Tree like view of your UNDO history \n\n F6 = Global Search + Replace Across Multiple Files"<CR>
+nnoremap <leader>? :echo "Custom Duckx Vim - SHORTCUTS \n\n ============================ \n\n k j = ESC Alternative - Type k j While in Insert Mode to Exit Insert Mode \n\n  =====================  \n\n Leader Key = , \n\n , ev = Opens up .vimrc config file \n\n -------------------------------- \n\n , l = Search the Buffer List \n\n , gl = GIT Pull \n , gc = GIT Commit then GIT PUSH \n , gs = GIT Status \n\n\n , dc = Drush Cache Clear All \n\n\n , , = Most Recently Opened Files \n\n\n -------------------------- \n\n F2 = NERD Tree File Manager \n\n F5 = GUNDO - Tree like view of your UNDO history \n\n F6 = Global Search + Replace Across Multiple Files"<CR>
 
 
 " Create Startup Message 
-autocmd VimEnter * echo "XCUBICLE - CUSTOM VIM SETUP SHORTCUTS \n\n ============================ \n\n k j = ESC Alternative - Type k j While in Insert Mode to Exit Insert Mode \n\n  =====================  \n\n Leader Key = , \n\n , ev = Opens up .vimrc config file \n\n -------------------------------- \n\n , l = Search the Buffer List \n\n , gl = GIT Pull \n , gc = GIT Commit then GIT PUSH \n , gs = GIT Status \n\n\n , dc = Drush Cache Clear All \n\n\n , , = Most Recently Opened Files \n\n\n -------------------------- \n\n F2 = NERD Tree File Manager \n\n F5 = GUNDO - Tree like view of your UNDO history \n\n F6 = Global Search + Replace Across Multiple Files"
+autocmd VimEnter * echo "Custom Duckx Vim - SHORTCUTS \n\n ============================ \n\n k j = ESC Alternative - Type k j While in Insert Mode to Exit Insert Mode \n\n  =====================  \n\n Leader Key = , \n\n , ev = Opens up .vimrc config file \n\n -------------------------------- \n\n , l = Search the Buffer List \n\n , gl = GIT Pull \n , gc = GIT Commit then GIT PUSH \n , gs = GIT Status \n\n\n , dc = Drush Cache Clear All \n\n\n , , = Most Recently Opened Files \n\n\n -------------------------- \n\n F2 = NERD Tree File Manager \n\n F5 = GUNDO - Tree like view of your UNDO history \n\n F6 = Global Search + Replace Across Multiple Files"
