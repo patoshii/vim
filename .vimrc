@@ -8,7 +8,12 @@ set scrolloff=4
 set number
 set autochdir
 set tags=./tags;
-set noswapfile
+set swapfile
+set undofile
+set undodir=~/.vim/.undo//
+set backupdir=~/.vim/.backup//
+set directory=~/.vim/.swp//
+
  
 set showcmd
 set incsearch
@@ -22,7 +27,6 @@ set tabstop=2
 set shiftwidth=2
  
 set number
-set undofile
 set ruler
  
 " Instead of :%s/foo/bar/g you just type :%s/foo/bar/
