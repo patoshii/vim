@@ -9,9 +9,9 @@ set autochdir
 set tags=./tags;
 set swapfile
 set undofile
-set undodir=~/.vim/.undo//
-set backupdir=~/.vim/.backup//
-set directory=~/.vim/.swp//
+set undodir=~/.vim//
+set backupdir=~/.vim//
+set directory=~/.vim//
 
  
 set showcmd
