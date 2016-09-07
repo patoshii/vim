@@ -9,9 +9,3 @@ Then on your home folder, make a symbolic link to the .vimrc file in the directo
 Type this in your home folder(~)  
 
 Note:"ln -s .vim/.vimrc .vimrc"
-
-
-Startup Screen & Shortcut Screen via the command ,?
-------------------
-
-![Startup Screen](http://i.imgur.com/NbcMW2G.png)
