@@ -69,25 +69,28 @@ set mouse=a
 :map <S-l> gt
  
 " Most Recently Used Files F12 Key
-map <F1> :MRU<CR>
+nnoremap <leader>o :MRU<CR>
+
 
 " Nerd Tree file explorer Toggle
-map <F2> :NERDTreeToggle<CR>
+nnoremap <leader>m :NERDTreeToggle<CR>
+
  
  
 " : YRShow - Yank Ring Popup Clipboard toggle
-nnoremap <silent> <F3> :YRShow<cr>
 nnoremap <silent> <leader>, :YRShow<cr>
 "inoremap <silent> <leader>, <ESC>:YRShow<cr>
  
 " tag list toggle menu - used for browsing all vars and functions in a file
-map <F4> :TlistToggle<CR>
+nnoremap <leader>t :TlistToggle<CR>
+
  
 " Gundo - Tree like view of your undo history - http://sjl.bitbucket.org/gundo.vim/
-nnoremap <F5> :GundoToggle<CR>
+nnoremap <leader>u :GundoToggle<CR>
+
  
 " greplace - The Global Replace plugin allows you to search and replace a pattern across multiple files interactively.
-nnoremap <F6> :Gsearch
+nnoremap <leader>r :Gsearch<CR>
  
 " buffer search list
 nnoremap <leader>l :ls<CR>:b<space>
@@ -99,8 +102,8 @@ nnoremap <leader>gs :!git status; read -p '========================== PRESS ANY 
 nnoremap <leader>s :!svn commit % -m 'updated ';<C-left>
  
 " jump to a function definition -  http://bgmerrell.blogspot.com/2008/02/first-of-all-let-me-introduce-ctags-and.html
-nnoremap <F9> <C-w><C-]>
-nnoremap <F10> <C-t>
+"nnoremap <F9> <C-w><C-]>
+"nnoremap <F10> <C-t>
  
 " Drush Shortcuts
 nnoremap <leader>dc :execute 'silent !drush cc all' | redraw!
@@ -109,7 +112,7 @@ nnoremap <leader>dc :execute 'silent !drush cc all' | redraw!
 nnoremap <leader>c :!compass compile ../../;<C-left>
 
 " Most Recently Opened Files
-nnoremap <leader>m :MRU<CR>
+nnoremap <leader>o :MRU<CR>
 
 " Surround word in quotes: http://learnvimscriptthehardway.stevelosh.com/chapters/09.html
 :nnoremap <leader>" viw<esc>a"<esc>hbi"<esc>lel
@@ -119,4 +122,5 @@ nnoremap <leader>? :echo "Custom Duckx Vim - SHORTCUTS \n\n ====================
 
 
 " Create Startup Message 
-autocmd VimEnter * echo "Custom Duckx Vim - SHORTCUTS \n\n ============================ \n\n k j = ESC Alternative - Type k j While in Insert Mode to Exit Insert Mode \n\n  =====================  \n\n Leader Key = , \n\n , ev = Opens up .vimrc config file \n\n -------------------------------- \n\n , l = Search the Buffer List \n\n , gl = GIT Pull \n , gc = GIT Commit then GIT PUSH \n , gs = GIT Status \n\n\n , dc = Drush Cache Clear All \n\n\n , , = Most Recently Opened Files \n\n\n -------------------------- \n\n F2 = NERD Tree File Manager \n\n F5 = GUNDO - Tree like view of your UNDO history \n\n F6 = Global Search + Replace Across Multiple Files"
+autocmd VimEnter * echo "Custom Duckx Vim - SHORTCUTS \n\n ============================ \n\n k j = ESC Alternative - Type k j While in Insert Mode to Exit Insert Mode \n\n  =====================  \n\n Leader Key = , \n\n , ev = Opens up .vimrc config file \n\n -------------------------------- \n\n , l = Search the Buffer List \n\n , gl = GIT Pull \n , gc = GIT Commit then GIT PUSH \n , gs = GIT Status \n\n\n , dc = Drush Cache Clear All \n\n\n , m = Most Recently Opened Files \n\n\n -------------------------- \n\n , m = NERD Tree File Manager \n\n , u = GUNDO - Tree like view of your UNDO history \n\n , r = Global Search + Replace Across Multiple Files"
+
